@@ -1,0 +1,59 @@
+{
+  "id": "E089",
+  "slug": "eng-double-slit-spacing",
+  "title": "이중슬릿 무늬간격 계산기",
+  "title_en": "Double Slit Fringe Spacing Calculator",
+  "category": "광학",
+  "category_en": "Optics",
+  "fields": [
+    {
+      "key": "lambda",
+      "label": "매질 내 파장 λ",
+      "label_en": "Wavelength in the medium λ",
+      "dimension": "length",
+      "example": 5e-07,
+      "constraint": "positive",
+      "display_unit": "nm",
+      "display_value": "500"
+    },
+    {
+      "key": "l",
+      "label": "슬릿-스크린 거리 L",
+      "label_en": "Slit-screen distance L",
+      "dimension": "length",
+      "example": 1,
+      "constraint": "positive",
+      "display_unit": "m",
+      "display_value": "1"
+    },
+    {
+      "key": "d",
+      "label": "슬릿 중심 간격 d",
+      "label_en": "Slit center spacing d",
+      "dimension": "length",
+      "example": 0.0001,
+      "constraint": "positive",
+      "display_unit": "mm",
+      "display_value": "0.1"
+    }
+  ],
+  "result_label": "인접 밝은 무늬 간격 Δy",
+  "result_label_en": "Adjacent bright fringe spacing Δy",
+  "result_dimension": "length",
+  "formula": "Δy ≈ λL/d",
+  "purpose": "원거리 작은 각도 이중슬릿 간섭무늬 간격 계산",
+  "purpose_en": "Calculate double-slit fringe spacing in the far-field small-angle approximation.",
+  "assumptions": "λ,L,d>0. 단색·결맞음 빛과 d≫λ, L≫d의 작은 각도 원거리 모델이다. 슬릿 폭 포락선·회절 세기·근접장 패턴은 제외한다.",
+  "assumptions_en": "Required: positive inputs, monochromatic coherent light, d≫λ and L≫d in the far-field small-angle limit. Slit-width envelope, diffraction intensity and near-field patterns are excluded.",
+  "sources": [
+    {
+      "label": "OpenStax · 3 2 mathematics of interference",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/3-2-mathematics-of-interference"
+    }
+  ],
+  "condition": "단색·결맞음 및 d≫λ, L≫d의 작은 각도 원거리 조건을 확인했습니다.",
+  "condition_en": "I confirm monochromatic coherent light and the far-field small-angle conditions d≫λ and L≫d.",
+  "site": "https://nanalab.kr/eng-double-slit-spacing/",
+  "repository": "https://github.com/NaNaCompany/eng-double-slit-spacing",
+  "output_unit": "m"
+}
